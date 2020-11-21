@@ -1,0 +1,50 @@
+.header-image {
+    background-image: url("./header_image.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: relative;
+    background-size: cover;
+    background-color: #999;
+}
+
+h1 {
+    font-size: 4em!important;
+}
+
+h2 {
+    font-size: 2.5em!important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-bottom: 50px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-100 {
+    margin-bottom: 100px!important;
+}
+
+.navbar {
+    &.is-dark {
+    background-color: darkslategrey;
+    background-image: none;
+    }
+}
+
+.box {
+    background-color: #2B2A2A!important;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 8px 1px rgba(255, 255, 255, 0.3)!important;
+    max-width: 400px;
+}
+
+$black: #040506;
+
+@import "./bulma/bulma.sass"
+
