@@ -1,6 +1,6 @@
 .header-image {
     //background-image: url("./header_image.jpg");
-    background-image: url("./header_image_test_dark.jpg");
+    background-image: url("../header_image_test_dark.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: relative;
@@ -58,5 +58,5 @@ $grey-darker: hsl(0, 0%, 21%);
 //$black: #040506;
 $black: #1b1b1b;
 
-@import "./bulma/bulma.sass"
+@import "bulma/bulma.sass"
 

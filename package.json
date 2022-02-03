@@ -1,0 +1,29 @@
+{
+  "name": "vimalmaken.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass --style=compressed --load-path=node_modules style.scss:build/style.css",
+    "serve-css": "npm run build-css -- -w",
+    "serve": "http-server & npm run serve-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VimalMaken/vimalmaken.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VimalMaken/vimalmaken.github.io/issues"
+  },
+  "homepage": "https://github.com/VimalMaken/vimalmaken.github.io#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "sass": "^1.49.7"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  }
+}
