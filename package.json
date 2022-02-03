@@ -5,9 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "sass --style=compressed --load-path=node_modules style.scss:build/style.css",
-    "serve-css": "npm run build-css -- -w",
-    "serve": "http-server & npm run serve-css"
+    "build-css": "sass --style=compressed --load-path=node_modules style.scss:build/style.css && purgecss -c purgecss.config.js -o build/style.css",
+    "serve": "http-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   "homepage": "https://github.com/VimalMaken/vimalmaken.github.io#readme",
   "dependencies": {
     "bulma": "^0.9.3",
+    "purgecss": "^4.1.3",
     "sass": "^1.49.7"
   },
   "devDependencies": {
